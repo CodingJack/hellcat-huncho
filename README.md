@@ -14,11 +14,13 @@ npm run start
 
 **Step 4**
 
-enter an accurate URL and generate a 12 second video at 60fps, H.264 and 1920x1080 (baked settings for now)
+enter an accurate URL
 
 **Step 5**
 
 watch the console for progress
+
+generates a 12 second video at 60fps, H.264 and 1920x1080 (baked settings for now)
 
 # timecut
 
