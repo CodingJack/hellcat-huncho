@@ -37,6 +37,7 @@ node_modules/
 jspm_packages/
 timecut-temp-1621383067876/
 videos/
+out/
 
 # Typescript v1 declaration files
 typings/
@@ -53,6 +54,7 @@ typings/
 # Output of 'npm pack'
 *.tgz
 *.png
+*.zip
 *.DS_Store
 .vscode
 

@@ -1,7 +1,7 @@
 {
   "author": "ThemePunch",
   "name": "hellcat-huncho",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "Hellcat Huncho",
   "keywords": [
     "Slider Revolution",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tungs/timecut.git"
+    "url": "https://github.com/CodingJack/hellcat-huncho"
   },
   "license": "BSD-3-Clause",
   "engines": {
@@ -18,11 +18,13 @@
   },
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron-forge start",
     "watch:front": "webpack --watch ./src/js/index.js --output-path ./dist/js --config ./config/webpack.config.js --mode=development",
     "build:front": "webpack ./src/js/index.js --output-path ./dist/js --config ./config/webpack.config.js --mode=production",
     "watch": "npm-run-all -p watch:*",
-    "build": "npm-run-all -p build:*"
+    "build": "npm-run-all -p build:*",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "bin": {
     "timecut": "./cli.js"
@@ -36,6 +38,7 @@
     "axios": "^0.21.1",
     "browserify": "^17.0.0",
     "commander": "^2.11.0",
+    "electron-squirrel-startup": "^1.0.0",
     "express": "^4.17.1",
     "ftp-deploy": "^2.4.1",
     "lodash.merge": "^4.6.2",
@@ -55,6 +58,11 @@
     "@babel/preset-env": "^7.14.1",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
+    "@electron-forge/cli": "^6.0.0-beta.55",
+    "@electron-forge/maker-deb": "^6.0.0-beta.55",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.55",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.55",
+    "@electron-forge/maker-zip": "^6.0.0-beta.55",
     "babel-loader": "^8.2.2",
     "core-js": "^3.12.1",
     "css-loader": "^5.2.4",
@@ -77,5 +85,32 @@
     "terser-webpack-plugin": "^5.1.1",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "hellcat_huncho"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
