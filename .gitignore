@@ -35,7 +35,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-timecut-temp-1621383067876/
 videos/
 out/
 

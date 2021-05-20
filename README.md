@@ -32,4 +32,7 @@
 **Step 8**
 
 * Compile to Electron App 
-[https://www.electronjs.org/docs/tutorial/quick-start#package-and-distribute-the-application](https://www.electronjs.org/docs/tutorial/quick-start#package-and-distribute-the-application)
+
+* yarn make
+
+* [https://www.electronjs.org/docs/tutorial/quick-start#package-and-distribute-the-application](https://www.electronjs.org/docs/tutorial/quick-start#package-and-distribute-the-application)

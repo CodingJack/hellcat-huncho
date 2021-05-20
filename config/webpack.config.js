@@ -17,7 +17,7 @@ module.exports = env => {
     output: {
       path: resolve( 'dist' ),
       filename: pathData => {
-        return pathData.chunk.name === 'main' ? 'hellcat-huncho.min.js' : 'vendors/hellcat-huncho-vendors.min.js';
+        return pathData.chunk.name === 'main' ? 'hellcat.min.js' : 'vendors/hellcat-vendors.min.js';
       },
       chunkFilename: pathData => {
         let isVendor;
@@ -31,7 +31,7 @@ module.exports = env => {
           const ids = name.split( '-' );
           fileName = ids[ ids.length - 1 ];
         }
-        return pathData.chunk.chunkReason ? `vendors/hellcat-huncho-${ fileName }.min.js` : `components/hellcat-huncho_[id].min.js`;
+        return pathData.chunk.chunkReason ? `vendors/hellcat-${ fileName }.min.js` : `components/hellcat_[id].min.js`;
       },
       publicPath: 'js/',
     },
