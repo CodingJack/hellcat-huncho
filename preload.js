@@ -55,19 +55,41 @@ window.addEventListener( 'DOMContentLoaded', () => {
       output: './videos/video.mp4',
     } ).then( () => {
       const output = document.getElementById( 'output' );
+      const back = document.createElement( 'div' );
+      const vid = document.createElement( 'video' );
+      const close = document.createElement( 'a' );
+      const frag = document.createDocumentFragment();
+
       output.innerHTML = 'Success!  The video is located in the videos folder';
       app.classList.remove( 'loading' );
-      const back = document.createElement( 'div' );
       back.className = 'back';
-      app.appendChild( back );
-      const vid = document.createElement( 'video' );
+      
       vid.width = 720;
       vid.height = 405;
       vid.src = './videos/video.mp4';
       vid.playsinline = 'playsinline';
+      vid.poster = './dist/img/bg.jpg';
       vid.allowfullscreen = 'allowfullscreen';
       vid.controls = 'controls';
-      app.appendChild( vid );
+      
+      const onClick = e => {
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        close.removeEventListener( 'click', onClick );
+        app.removeChild( vid );
+        app.removeChild( back );
+        app.removeChild( close );
+      };
+
+      close.href = '#';
+      close.className = 'close';
+      close.innerHTML = 'close';
+      close.addEventListener( 'click', onClick );
+
+      frag.appendChild( back );
+      frag.appendChild( vid );
+      frag.appendChild( close );
+      app.appendChild( frag );
     } );
   } );
 } );
