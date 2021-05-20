@@ -53,10 +53,21 @@ window.addEventListener( 'DOMContentLoaded', () => {
       fps: 60,
       duration: 12,
       output: './videos/video.mp4',
-    } ).then(function () {
+    } ).then( () => {
       const output = document.getElementById( 'output' );
       output.innerHTML = 'Success!  The video is located in the videos folder';
       app.classList.remove( 'loading' );
+      const back = document.createElement( 'div' );
+      back.className = 'back';
+      app.appendChild( back );
+      const vid = document.createElement( 'video' );
+      vid.width = 720;
+      vid.height = 405;
+      vid.src = './videos/video.mp4';
+      vid.playsinline = 'playsinline';
+      vid.allowfullscreen = 'allowfullscreen';
+      vid.controls = 'controls';
+      app.appendChild( vid );
     } );
   } );
 } );
