@@ -2,7 +2,7 @@
 
 **Step 1**
 
-Get ffmpeg
+* Get ffmpeg
 [https://trac.ffmpeg.org/wiki/CompilationGuide/macOS](https://trac.ffmpeg.org/wiki/CompilationGuide/macOS)
 
 **Step 2**
