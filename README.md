@@ -1,23 +1,22 @@
 # Hellcat Huncho
 
 **Step 1**
-
-clone and run npm install
+Get ffmpeg
+[https://trac.ffmpeg.org/wiki/CompilationGuide/macOS](https://trac.ffmpeg.org/wiki/CompilationGuide/macOS)
 
 **Step 2**
-
-cd the main directory
+clone and run npm install
 
 **Step 3**
-
-npm run start
+cd the main directory
 
 **Step 4**
-
-enter an accurate URL
+npm run start
 
 **Step 5**
+enter an accurate URL
 
+**Step 6**
 watch the console for progress
 
 generates a 12 second video at 60fps, H.264 and 1920x1080 (baked settings for now)
