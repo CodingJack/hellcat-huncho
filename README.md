@@ -24,17 +24,14 @@
 **Step 5**
 
 * enter an accurate URL
-
-**Step 6**
-
 * watch the console for progress
 
-**Step 7**
+**Step 6**
 
 * generates a 12 second video at 60fps, H.264 and 1920x1080 (baked settings for now).
 * video will be named "video.mp4" and be placed in a directory called "videos" located in the root directory.
 
-**Step 8**
+**Step 7**
 
 * Compile to Electron App 
 
