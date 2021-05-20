@@ -1,5 +1,9 @@
 # Hellcat Huncho
 
+![First Screenshot of the App](/dist/img/screen1.jpg)
+
+![Second Screenshot of the App](/dist/img/screen2.jpg)
+
 **Step 1**
 
 * Get ffmpeg
