@@ -1,8 +1,6 @@
 /*
  * the main entry point for the App
 */
-// require( './src/scss/style.scss' );
-
 const electron = require( 'electron' );
 const timecut = require( 'timecut' );
 
@@ -52,7 +50,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
       pixFmt: 'yuv420p',
       fps: 60,
       duration: 12,
-      output: './videos/video.mp4',
+      output: './video.mp4',
     } ).then( () => {
       const output = document.getElementById( 'output' );
       const back = document.createElement( 'div' );
@@ -66,7 +64,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
       
       vid.width = 720;
       vid.height = 405;
-      vid.src = './videos/video.mp4';
+      vid.src = './video.mp4';
       vid.playsinline = 'playsinline';
       vid.poster = './dist/img/bg.jpg';
       vid.allowfullscreen = 'allowfullscreen';

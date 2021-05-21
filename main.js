@@ -5,6 +5,7 @@ const createWindow = () => {
   const win = new BrowserWindow( {
     width: 1600,
     height: 900,
+    icon: __dirname + '/dist/img/Icon.icns',
     backgroundColor: '#fff',
     webPreferences: {
       preload: path.join( __dirname, 'preload.js' ),    

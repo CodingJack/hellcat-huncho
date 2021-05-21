@@ -34,7 +34,8 @@
 **Step 7**
 
 * Compile to Electron App 
-
-* yarn make
+* brew install homebrew/cask-versions/wine-devel
+* [https://github.com/electron/electron-packager](https://github.com/electron/electron-packager)
+* electron-packager ./ --all
 
 * [https://www.electronjs.org/docs/tutorial/quick-start#package-and-distribute-the-application](https://www.electronjs.org/docs/tutorial/quick-start#package-and-distribute-the-application)
