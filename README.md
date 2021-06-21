@@ -1,5 +1,7 @@
 # Hellcat Huncho
 
+Load and record any website for any given amount of time.  This allows a person to easily convert a web slider or web animation into an H.264 video.  Useful for kiosks and what not who would normally be connected to the internet, displaying some type of rotating banner, etc.  Most requires require an internet connection.  But Hellcat Huncho H.264 videos can run from your computer offline ;)
+
 ![First Screenshot of the App](/dist/img/screen1.jpg)
 
 ![Second Screenshot of the App](/dist/img/screen2.jpg)
